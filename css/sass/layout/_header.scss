@@ -1,0 +1,81 @@
+// Start Header
+
+.header {
+  padding: 20px 0;
+  border-bottom: 1px solid $lineColor;
+  overflow: hidden;
+  .logo {
+    @media #{$minSmall} {
+      width: 100%;
+      float: none;
+      text-align: center;
+    }
+    @media #{$minMedium} {
+      width: 30%;
+      float: $float-left;
+      text-align: $text-left;
+    }
+    h1 {
+      margin-bottom: 0;
+      color: $logoColor;
+      font-size: 26px;
+      text-transform: uppercase;
+    }
+    p {
+      color: $secondColor;
+      font-size: 12px;
+    }
+  }
+  .navbar {
+    background-color: $mainColor;
+    border-radius: 10px;
+    overflow: hidden;
+
+    @media #{$minSmall} {
+      width: 100%;
+      float: none;
+      text-align: center;
+      margin-top: 30px;
+      display: block !important;
+    }
+    @media #{$minMedium} {
+      width: 60%;
+      float: $float-left;
+      margin-left: 10%;
+      margin-top: 1em;
+    }
+    @media #{$maxMobile} {
+      display: none;
+      border-radius: 0;
+
+    }
+    li {
+      width: 20%;
+      float: $float-left;
+      text-align: center;
+      font-size: 13px;
+      @media #{$maxMobile} {
+        display: block;
+        float: none;
+        width: 100%;
+        text-align: $text-left;
+        padding-left: 10px;
+        padding-right: 10px;
+      }
+      a {
+        display: block;
+        padding: 20px 5px;
+        color: $whiteColor;
+        text-decoration: none;
+        text-transform: uppercase;
+        &:hover {
+          color: $hoverNavColor;
+        }
+      }
+    }
+  }
+}
+
+
+
+// End Header

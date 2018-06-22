@@ -1,0 +1,29 @@
+@media max-width: 767px){
+
+  // Mobile
+
+}
+
+@media (min-width: 768px){
+
+  // Small
+
+}
+
+@media (min-width: 992px){
+
+  // Medium
+
+}
+
+@media (min-width: 1200px){
+
+}
+
+************
+
+p {
+    @media (max-width: 767px){
+    color: #F00
+  }
+}
